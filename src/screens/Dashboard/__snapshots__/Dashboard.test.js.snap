@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sort buttons renders properly when ascending, sortBy Amount 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+   
+  Amount 
+  <FontAwesome
+    name="sort-up"
+    size={20}
+  />
+</Text>
+`;
+
+exports[`sort buttons renders properly when ascending, sortBy Date 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+   
+  Date 
+  <FontAwesome
+    name="sort-up"
+    size={20}
+  />
+</Text>
+`;
+
+exports[`sort buttons renders properly when descending, sortBy Amount 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+   
+  Amount 
+  <FontAwesome
+    name="sort-down"
+    size={20}
+  />
+</Text>
+`;
+
+exports[`sort buttons renders properly when descending, sortBy Date 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+   
+  Date 
+  <FontAwesome
+    name="sort-down"
+    size={20}
+  />
+</Text>
+`;
