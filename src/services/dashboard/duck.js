@@ -14,7 +14,14 @@ export const actionCreators = {
   getTransactionHistory: (userId) => ({
     type: actionTypes.TRANSACTIONS_GET,
     payload: userId,
-  });
+  }),
+  receiveTransactionHistory: (response) => ({
+    type: actionTypes.TRANSACTIONS_RESPONSE,
+    payload: response
+  }),
+  errorTransactionHistory: () => ({
+    type: actionTypes.TRANSACTIONS_ERROR
+  })
 }
 
 export const reducer = (state = initialState, action) => {
