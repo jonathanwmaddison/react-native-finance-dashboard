@@ -1,6 +1,8 @@
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
-Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
+This an example dashboard for managing transactions. It uses Redux for state management, Redux Saga for async data management, React Native Elements for most of the UI, fuse.js for search, and jest for unit testing.
+
+A more fully fleshed dashboard would handle api errors properly, improve on the look and feel of the UI, and cover all components with unit tests. But this seemed like a good stopping point.
 
 ## Table of Contents
 
