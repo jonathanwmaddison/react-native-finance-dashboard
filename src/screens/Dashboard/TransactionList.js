@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { shape, number, string, arrayOf } from 'prop-types';
-import { View, FlatList, Text } from 'react-native';
+import { shape, number, string, arrayOf, bool } from 'prop-types';
+import { View, FlatList, Text, ActivityIndicator } from 'react-native';
 import TransactionItem from './TransactionItem';
 import { getTransactionsState } from './selectors';
 
@@ -17,12 +17,22 @@ export class TransactionList extends Component {
         transFrom: string.isRequired,
       }).isRequired
     ),
+    ascendingSort: bool.isRequired,
+    sortByKey: string.isRequired,
+    search: string
   };
+
+  static defaultProps = {
+    search: null
+  }
 
   keyExtractor = (item) => item.transId.toString();
 
   render() {
-    const { transactions } = this.props;
+    const { transactions, isFetching } = this.props;
+    if (isFetching) {
+      return <ActivityIndicator />
+    }
     return (
       <View style={{ flex: 1}}>
         <FlatList
@@ -40,7 +50,8 @@ export class TransactionList extends Component {
 }
 const mapStateToProps = (state, props) => {
   return {
-    transactions: getTransactionsState(state, props)
+    transactions: getTransactionsState(state, props),
+    isFetching: state.dashboard.isFetching
   }
 };
 

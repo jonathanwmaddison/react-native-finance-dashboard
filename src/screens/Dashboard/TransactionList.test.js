@@ -7,9 +7,14 @@ jest.mock('./TransactionItem', () => 'TransactionItem')
 
 describe('TransactionList', () => {
   let wrapper;
+  let props = {
+    sortByKey: 'transAmt',
+    search: null,
+    ascendingSort: false
+  };
   beforeEach(() => {
     wrapper = renderer
-      .create(<TransactionList transactions={mockTransactions} />)
+      .create(<TransactionList {...props} transactions={mockTransactions} />)
   });
   it('[snapshot] matches', () => {
     expect(wrapper.toJSON()).toMatchSnapshot();

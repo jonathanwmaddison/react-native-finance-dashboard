@@ -13,30 +13,30 @@ exports[`TransactionList [snapshot] matches 1`] = `
       Array [
         Object {
           "custId": 0,
-          "description": "Team Lunch",
-          "transAmt": -53.23,
-          "transFrom": "Checking Account",
+          "description": "B",
+          "transAmt": 3,
+          "transFrom": "B",
           "transId": 24,
-          "transTime": 1515703912733,
-          "transTo": "Restaurant",
+          "transTime": 2,
+          "transTo": "B",
         },
         Object {
           "custId": 0,
-          "description": "Team Lunch",
-          "transAmt": -53.23,
-          "transFrom": "Checking Account",
+          "description": "A",
+          "transAmt": 1,
+          "transFrom": "A",
           "transId": 23,
-          "transTime": 1515703912113,
-          "transTo": "Restaurant",
+          "transTime": 1,
+          "transTo": "A",
         },
         Object {
           "custId": 0,
-          "description": "Team Lunch",
-          "transAmt": -53.23,
-          "transFrom": "Checking Account",
+          "description": "C",
+          "transAmt": 2,
+          "transFrom": "C",
           "transId": 22,
-          "transTime": 1515703911630,
-          "transTo": "Restaurant",
+          "transTime": 3,
+          "transTo": "C",
         },
       ]
     }
@@ -70,12 +70,12 @@ exports[`TransactionList [snapshot] matches 1`] = `
       >
         <TransactionItem
           custId={0}
-          description="Team Lunch"
-          transAmt={-53.23}
-          transFrom="Checking Account"
+          description="B"
+          transAmt={3}
+          transFrom="B"
           transId={24}
-          transTime={1515703912733}
-          transTo="Restaurant"
+          transTime={2}
+          transTo="B"
         />
       </View>
       <View
@@ -84,12 +84,12 @@ exports[`TransactionList [snapshot] matches 1`] = `
       >
         <TransactionItem
           custId={0}
-          description="Team Lunch"
-          transAmt={-53.23}
-          transFrom="Checking Account"
+          description="A"
+          transAmt={1}
+          transFrom="A"
           transId={23}
-          transTime={1515703912113}
-          transTo="Restaurant"
+          transTime={1}
+          transTo="A"
         />
       </View>
       <View
@@ -98,12 +98,12 @@ exports[`TransactionList [snapshot] matches 1`] = `
       >
         <TransactionItem
           custId={0}
-          description="Team Lunch"
-          transAmt={-53.23}
-          transFrom="Checking Account"
+          description="C"
+          transAmt={2}
+          transFrom="C"
           transId={22}
-          transTime={1515703911630}
-          transTo="Restaurant"
+          transTime={3}
+          transTo="C"
         />
       </View>
     </View>
