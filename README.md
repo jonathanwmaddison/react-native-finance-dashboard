@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React Native App](https://github.com/
 
 This an example dashboard for managing transactions. It uses Redux for state management, Redux Saga for async data management, React Native Elements for most of the UI, fuse.js for search, and jest for unit testing.
 
+Give this Example Repo a try w/Expo: https://expo.io/@jonathanwmaddison/user-dashboard-app
+
 A more fully fleshed dashboard would handle api errors properly, improve on the look and feel of the UI, and cover all components with unit tests. But this seemed like a good stopping point.
 
 ## Table of Contents
