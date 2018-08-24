@@ -7,6 +7,7 @@ import { View, StyleSheet, Text } from 'react-native';
 const styles = StyleSheet.create({
   date: {
     paddingBottom: 10,
+    fontWeight: 'bold'
   },
   divider: {
     marginBottom: 10,
@@ -33,7 +34,7 @@ const TransactionItem = ({
   transFrom,
 }) => (
   <Card style={{ flex: 1 }}>
-    <Text style={styles.date}> {moment(transTime).format('MMMM Do')}</Text>
+    <Text style={styles.date}> {moment(transTime).format('MMMM D, h:mm a')}</Text>
     <Divider style={styles.divider} />
     <View style={styles.transactionDetails}>
       <View style={styles.detailsCard}>
